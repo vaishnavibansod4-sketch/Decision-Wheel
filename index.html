@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decision Wheel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎡 Decision Wheel</h1>
+
+    <p>How many options?</p>
+
+    <input
+        id="count"
+        type="number"
+        min="2"
+        max="20"
+        placeholder="Example: 4">
+
+    <button onclick="createInputs()">
+        Create
+    </button>
+
+    <div id="inputs"></div>
+
+    <canvas
+        id="wheel"
+        width="500"
+        height="500">
+    </canvas>
+
+    <br>
+
+    <button id="spinButton" onclick="spinWheel()">
+        SPIN
+    </button>
+
+    <h2 id="winner"></h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
